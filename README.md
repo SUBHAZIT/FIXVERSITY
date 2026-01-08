@@ -1,73 +1,174 @@
-# Welcome to your Lovable project
+<p align="center">
+  <img src="./FIXVERSITY.png" alt="FixVersity Logo" width="300"/>
+</p>
 
-## Project info
+<h1 align="center">FIXVERSITY</h1>
+<p align="center"><strong>Campus Issue Reporting & Maintenance Management Platform</strong></p>
+<p align="center">Campus Problems, Fixed Fast</p>
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## Overview
 
-There are several ways of editing your application.
+FixVersity is a centralized digital platform designed to modernize campus maintenance and administrative issue reporting.  
+It enables students and faculty to report issues easily, while administrators track, assign, and resolve them efficiently through a role-based system.
 
-**Use Lovable**
+Traditional manual complaint processes often lead to delays, poor tracking, and lack of accountability.  
+FixVersity replaces these workflows with real-time tracking, transparency, and smart coordination.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Problem Statement
 
-**Use your preferred IDE**
+Manual workflows delay resolution and weaken transparency across campus operations.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Objective
 
-Follow these steps:
+To develop an application that enables campus users to report maintenance and administrative issues and allows authorized administrators to track, manage, and resolve those issues efficiently.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Core Features
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Authentication and Roles
+- Secure email and password authentication
+- Role-based access for:
+  - Student
+  - Faculty
+  - Worker
+  - Administrator
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### Issue Reporting
+- Report issues with title and description
+- Optional image upload
+- Automatic issue status assignment
 
-**Edit a file directly in GitHub**
+### Issue Tracking
+- Real-time status updates:
+  - Open
+  - In Progress
+  - Resolved
+- Transparent progress visibility
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Admin Control Panel
+- View all reported issues
+- Assign workers based on expertise and performance
+- Update issue status
+- Monitor resolution progress
 
-**Use GitHub Codespaces**
+### Worker Rating System
+- Users rate workers after issue resolution
+- Ratings influence future worker assignments
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Cross-Platform Support
+- Android APK
+- iOS Progressive Web App (PWA)
+- Web browser support
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## System Workflow
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Student or Faculty logs in
+2. Issue is submitted with required details
+3. Administrator reviews the issue
+4. Worker is assigned
+5. Worker updates progress
+6. Administrator marks issue as resolved
+7. User submits feedback and rating
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## System Architecture
 
-## Can I connect a custom domain to my Lovable project?
+- Layered and scalable architecture
+- Secure authentication and role-based access control
+- Centralized issue management service
+- Worker assignment and rating engine
+- Image storage support
+- Continuous backend health monitoring
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Tech Stack
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Frontend
+- React.js
+- HTML5, CSS3, JavaScript
+- Responsive design
+
+### Backend and Database
+- Supabase
+  - Authentication (Email & Password)
+  - PostgreSQL Database
+  - Role-Based Access Control (RLS)
+
+### Mobile Platforms
+- Android APK (WebView wrapper)
+- iOS PWA (Progressive Web App)
+
+### Deployment
+- Cloudflare Pages
+  - Global CDN
+  - Automatic deployments
+  - HTTPS by default
+
+### Tools
+- Git and GitHub
+- Figma (UI/UX Design)
+- Postman (API Testing)
+
+---
+
+## iOS Availability Note
+
+Due to Apple platform restrictions, the native iOS app build is limited to team members via TestFlight or developer mode.  
+Full functionality is available for iOS users through the Progressive Web App.
+
+---
+
+## Installation and Usage
+
+### Web
+Access the deployed Cloudflare URL using any modern browser.
+
+### Android
+Download the APK, enable installation from unknown sources, and install the app.
+
+### iOS
+Open the website in Safari and add it to the home screen to use it as a Progressive Web App.
+
+---
+
+## Hackathon Readiness
+
+- Fully functional MVP
+- Real-world campus problem focus
+- Scalable and secure architecture
+- Cross-platform deployment
+- Live demo ready
+
+---
+
+## Team
+
+**Team Name:** 404 Found
+
+- Subhajit Pathak  
+- Ujjal Roy  
+- Ritesh Samanta  
+
+---
+
+## License
+
+This project is developed for educational and hackathon purposes.
+
+---
+
+## Acknowledgements
+
+RKMMVERI Tech Fest – Perceptron ’26  
+Open-source tools and platforms used in development
